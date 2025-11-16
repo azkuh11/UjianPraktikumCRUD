@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title', 255);
             $table->string('author', 255);
             $table->string('cover_image', 255)->nullable();
-            $table->year('year');
+            $table->integer('year');
             $table->integer('stock');
             $table->timestamps();
         });

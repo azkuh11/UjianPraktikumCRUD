@@ -61,7 +61,7 @@
                                 <label for="year" class="form-label">Tahun Terbit <span class="text-danger">*</span></label>
                                 <input type="number" class="form-control @error('year') is-invalid @enderror" 
                                        id="year" name="year" value="{{ old('year', $book->year) }}" 
-                                       min="1900" max="{{ date('Y') }}" required>
+                                       min="1" max="{{ date('Y') }}" required>
                                 @error('year')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
